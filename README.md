@@ -30,7 +30,7 @@ TicketChain is a futuristic platform for selling and collecting event tickets as
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ticketchain.git
+   git clone https://github.com/AlexGrim12/ticket-chain
    cd ticketchain
    ```
 
