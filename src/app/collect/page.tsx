@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Ticket, Star, Zap } from 'lucide-react'
+import { Star, Zap } from 'lucide-react'
+import Image from 'next/image'
 
 const CollectPage = () => {
   const collections = [
@@ -46,7 +47,7 @@ const CollectPage = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <img
+              <Image
                 src={item.image}
                 alt={item.name}
                 className="w-full h-48 object-cover"

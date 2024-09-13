@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Shield, Zap, Users } from 'lucide-react'
+import Link from 'next/link'
 
 const AboutPage = () => {
   return (
@@ -17,9 +18,9 @@ const AboutPage = () => {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
           <p className="text-lg">
-            At TicketChain, we're on a mission to transform the way people
+            At TicketChain, we&apos;re on a mission to transform the way people
             experience and collect memories from live events. By leveraging
-            blockchain technology and NFTs, we're creating a secure,
+            blockchain technology and NFTs, we&apos;re creating a secure,
             transparent, and exciting platform for event-goers and collectors
             alike.
           </p>
@@ -52,13 +53,15 @@ const AboutPage = () => {
             Be part of the future of event ticketing. Start collecting, trading,
             and experiencing with TicketChain today!
           </p>
-          <motion.button
-            className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get Started
-          </motion.button>
+          <Link href="/events">
+            <motion.button
+              className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get Started
+            </motion.button>
+          </Link>
         </section>
       </main>
     </div>
